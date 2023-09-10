@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "az204_wakeup_call2": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7265",
+      "launchBrowser": false
+    }
+  }
+}
