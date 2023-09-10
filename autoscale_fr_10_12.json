@@ -1,0 +1,64 @@
+{
+    "location": "East US",
+    "tags": {},
+    "properties": {
+        "name": "ASP_MarcBraun-Autoscale-314",
+        "enabled": true,
+        "targetResourceUri": "/subscriptions/33a7c3bd-c5c5-4136-95b3-0403a553edf9/resourceGroups/RG_MarcBraun/providers/Microsoft.Web/serverFarms/ASP_MarcBraun",
+        "profiles": [
+            {
+                "name": "Profile 1",
+                "capacity": {
+                    "minimum": "2",
+                    "maximum": "2",
+                    "default": "2"
+                },
+                "rules": [],
+                "recurrence": {
+                    "frequency": "Week",
+                    "schedule": {
+                        "timeZone": "W. Europe Standard Time",
+                        "days": [
+                            "Friday"
+                        ],
+                        "hours": [
+                            10
+                        ],
+                        "minutes": [
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "{\"name\":\"Auto created default scale condition\",\"for\":\"Profile 1\"}",
+                "capacity": {
+                    "minimum": "1",
+                    "maximum": "1",
+                    "default": "1"
+                },
+                "rules": [],
+                "recurrence": {
+                    "frequency": "Week",
+                    "schedule": {
+                        "timeZone": "W. Europe Standard Time",
+                        "days": [
+                            "Friday"
+                        ],
+                        "hours": [
+                            12
+                        ],
+                        "minutes": [
+                            0
+                        ]
+                    }
+                }
+            }
+        ],
+        "notifications": [],
+        "targetResourceLocation": "East US"
+    },
+    "id": "/subscriptions/33a7c3bd-c5c5-4136-95b3-0403a553edf9/resourceGroups/RG_MarcBraun/providers/microsoft.insights/autoscalesettings/ASP_MarcBraun-Autoscale-314",
+    "name": "ASP_MarcBraun-Autoscale-314",
+    "type": "Microsoft.Insights/autoscaleSettings"
+}
